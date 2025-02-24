@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+    <input id="input" type="number" min="0" placeholder="number" oninput="change()">
+    <p id="output"></p>
+    
+    <script lang="javascript">
+        function fact(n){
+            var r = n;
+            for (let i=1; i < n; i++)
+                r*=i;
+            return r;
+        }
+        
+        function change(){
+            var input = document.getElementById("input");
+            var output = document.getElementById("output");
+            output.innerText = fact(input.value);
+        }
+
+
+
+    </script>
+</body>
+</html>
